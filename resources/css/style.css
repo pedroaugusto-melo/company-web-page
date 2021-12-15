@@ -1,0 +1,552 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styling */
+
+a {
+    color: white;
+}
+
+h2{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5rem;
+    margin-bottom: 0.5%;
+    text-align: center;
+}
+
+h3 {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.0rem;
+    margin-bottom: 0.5%;
+    text-align: center; 
+}
+
+h4{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+h5{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.0rem;
+    text-align: center;
+}
+
+/* General Styling Mobile */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1rem;
+    }
+
+    h4 {
+        font-size: 1rem;
+    }
+
+    h5 {
+        font-size: 0.75rem;
+    }
+}
+
+/* Header Styling */
+
+header {
+    color: white;
+    background-color: black;
+    height: 60px;
+    width: 100%;
+}
+
+header h1 {
+    font-family: 'Archivo', sans-serif;
+}
+
+header nav {
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header nav ul {
+    width: 100%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+}
+
+header nav ul li {
+    text-decoration: underline;
+}
+
+/* Header Mobile Styling*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    header {
+        display: inline-flex;
+        padding-right: 5px;
+    }
+
+    header h1 {
+        margin: 10px 1% 10px 10px;
+    }
+
+    header nav {
+        width: 90%;
+        font-size: 1rem;  
+    }
+
+    header nav ul {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header nav li {
+        margin: 0 7.5px;
+    }
+
+}
+
+/* Header Tablet Styling*/
+
+@media only screen and (max-width: 770px) and (min-width: 480px) {
+    header {
+        display: inline-flex;
+        padding-right: 20px;
+    }
+
+    header h1 {
+        margin: 10px 1% 10px 20px;
+    }
+
+    header nav {
+        width: 90%;
+        font-size: 1.25rem;  
+    }
+
+    header nav ul {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header nav li {
+        margin: 0 7.5px;
+    }
+
+}
+
+/* Header Desktop Styling*/
+
+@media only screen and (min-width: 770px) {
+    header {
+        display: inline-flex;
+        padding-right: 20px;
+    }
+
+    header h1 {
+        margin: 10px 1% 10px 20px;
+    }
+
+    header nav {
+        width: 90%;
+        font-size: 1.25rem;  
+    }
+
+    header nav ul {
+        margin: 10px 0;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    header nav li {
+        margin: 0 7.5px;
+    }
+
+}
+
+/* Main Styling */
+
+main {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Intro Styling */
+
+.intro {
+    width: 100%;
+    height: 1000px;
+    background-image: url("../images/intro.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.intro .content {
+    width: 100%;
+    height: 12.5%;
+    background-color: white;
+    text-align: center;
+    padding: 1%;
+}
+
+/* Intro Mobile Styling */
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .intro {
+        height: 500px;
+    }
+}
+
+/* Mission Styling */
+
+.mission {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mission .icons {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 4% 0;
+}
+
+.mission .icons figure {
+    margin: 10px 50px;
+    width: 200px;
+    text-align: center;
+    margin: 0 5%;
+}
+
+.mission .icons figcaption {
+    margin-top: 3%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.mission .icons figure img {
+    width: 100%;
+}
+
+/* Mission Mobile Styling*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .mission {
+        height: 500px;
+        margin-top: 90px;
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+
+    .mission .icons {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .mission .icons figure {
+        width: 80px;
+        margin: 20px 45px;
+    }
+}
+
+/* Mission Tablet Styling*/
+
+@media only screen and (max-width: 770px) and (min-width: 480px) {
+    .mission {
+        padding-top: 60px;
+        justify-content: center;
+    }
+
+    .mission .icons {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .mission .icons figure {
+        width: 120px;
+        margin: 20px 45px;
+    }
+}
+
+/* Mission Desktop Styling*/
+
+@media only screen and (min-width: 770px) {
+    .mission {
+        padding-top: 60px;
+        justify-content: center;
+    }
+
+    .mission .icons {
+        width: 100%;
+        margin-top: 25px;
+    }
+
+    .mission .icons figure {
+        width: 200px;
+        margin: 50px 80px;
+    }
+}
+
+/* Portifolio Styling */
+
+.portifolio {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    color: white;
+}
+
+.portifolio .icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.portifolio .icons figure {
+    text-align: center;
+}
+
+.portifolio .icons figcaption {
+    margin-top: 5%;
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.portifolio .icons figure img {
+    width: 100%;
+    max-width: 300px;
+    height: 80%;
+    border-radius: 10%;
+}
+
+/*Mobile Portifolio*/
+
+@media only screen and (max-width: 480px) and (min-width: 320px) {
+    .portifolio {
+        padding: 35px;
+    }
+
+    .portifolio h2 {
+        margin: 0;
+    }
+
+    .portifolio .icons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portifolio .icons figure {
+        width: 100%;
+        height: 250px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .portifolio .icons figcaption {
+        font-size: 1.25rem;
+    }
+
+}
+
+/*Tablet Portifolio*/
+
+@media only screen and (max-width: 770px) and (min-width: 480px){
+    .portifolio {
+        padding: 35px;
+    }
+
+    .portifolio h2 {
+        margin: 0;
+    }
+
+    .portifolio .icons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .portifolio .icons figure {
+        width: 350px;
+        height: 300px;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: 25px;
+    }
+
+    .portifolio .icons figcaption {
+        font-size: 1.25rem;
+    }
+
+}
+
+/*Desktop Portifolio*/
+
+@media only screen and (min-width: 770px){
+    .portifolio {
+        padding: 35px;
+    }
+
+    .portifolio h2 {
+        margin: 0;
+    }
+
+    .portifolio .icons {
+        width: 100%;
+        display: flex;
+    }
+
+    .portifolio .icons figure {
+        width: 350px;
+        height: 300px;
+        text-align: center;
+        margin: 50px;
+    }
+
+    .portifolio .icons figcaption {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+/* Team Styling */
+
+.team {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .icons {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team .icons figure {
+    text-align: center;
+}
+
+.team .icons figcaption {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.team .icons figure img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+
+/*Mobile Team*/
+
+@media only screen and (max-width: 480px) {
+    .team {
+        padding: 30px;
+    }
+
+    .team .icons {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .team .icons figure {
+        width: 225px;
+        height: 225px;
+        text-align: center;
+        margin: 0;
+        margin-top: 40px;
+        margin-bottom: 30px;
+    }
+
+}
+
+/*Tablet Team*/
+
+@media only screen and (max-width: 770px) and (min-width: 480px){
+    .team {
+        padding: 30px;
+    }
+
+    .team .icons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team .icons figure {
+        width: 225px;
+        height: 225px;
+        text-align: center;
+        margin: 0;
+        margin: 40px 25px 30px 25px;
+        flex-shrink: 0;
+    }
+
+}
+
+/*Desktop Team*/
+
+@media only screen and (min-width: 770px){
+    .team {
+        padding: 30px;
+    }
+
+    .team .icons {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .team .icons figure {
+        width: 300px;
+        height: 300px;
+        text-align: center;
+        margin: 60px;
+        flex-shrink: 0;
+    }
+
+}
+
+/* Footer Styling */
+
+footer {
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    padding: 20px;
+}
